@@ -20,10 +20,16 @@
     "webpack": "^4.44.2"
   },
   "dependencies": {
+    "electron-packager": "^15.1.0",
     "source-map-support": "^0.5.19"
   },
   "scripts": {
     "dev": "electron-webpack dev",
-    "build": "electron-webpack && electron-builder --win --x64"
+    "build": "electron-webpack && electron-builder --mac --x64"
+  },
+  "build": {
+    "directories": {
+      "output": "build"
+    }
   }
 }
